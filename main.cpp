@@ -22,5 +22,6 @@ int main()
     shared_ptr<Student> pt2 = pt1;
     std::cout << "pt1.usecount: " << pt1.use_count() << std::endl;
     pt2 = std::move(pt1);
+    std::cout << "pt1.usecount: " << pt2.use_count() << std::endl;
     return 0;
 }
